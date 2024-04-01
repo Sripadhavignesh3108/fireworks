@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .main{
+            position: absolute;
+            top: 500px;
+            left: 590px;
+        }
+        .fire{
+            height: 5px;
+            width: 10px;
+            position: relative;
+            right: -35px;
+            top: 60px;
+            z-index: -1;
+            animation-name: spark;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+        }
+        .chichu{
+            height: 170px;
+        width: 100px; 
+        position: fixed;
+      }
+      .fire2{
+            height: 5px;
+            width: 10px;
+            position: absolute;
+            left: 627px;
+            top: 569px;
+            z-index: -1;
+            animation: spark2 3s ease-out infinite;
+            animation-delay: 2s;
+            
+        }
+  @keyframes spark {
+
+    
+    100%{
+       width: 500px;
+       height: 300px;
+        transform: translate(-100px,-600px);
+    }
+    
+  }
+  @keyframes spark2 {
+    100%{
+        width: 500px;
+       height: 300px;
+        transform: translate(-350px,-600px);
+    }
+    
+  }
+    </style>
+</head>
+<div class="main">
+    <img src="./chichu1.png" alt="chichubuddi" class="chichu">
+  <div><img src="./spark.png" class="fire"></div>
+</div>
+    <div><img src="./spark2.png" class="fire2"></div>
+
+</body>
+</html>
